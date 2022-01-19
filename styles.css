@@ -1,0 +1,124 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+main::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-image: url("planet-lg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #0d0d0d;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(15, 15, 15, 0.3);
+  z-index: 10;
+  color: #fff;
+}
+
+.modal-window h1 {
+  font-size: 2rem;
+}
+
+.modal-window-date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  background-color: #0d0d0d;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  color: #fff;
+}
+
+.close-modal,
+.close-modal-date {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.image-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: auto;
+  height: 65vh;
+  padding-right: 2.75rem;
+  text-align: justify;
+}
+
+.btn-like-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-like {
+  width: 10%;
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.btn-success {
+  color: #fff !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
